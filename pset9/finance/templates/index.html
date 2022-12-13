@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portifolio
+{% endblock %}
+
+{% block main %}
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-start">Symbol</th>
+                <th class="text-start">Name</th>
+                <th class="text-end">Shares</th>
+                <th class="text-end">Price</th>
+                <th class="text-end">TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if purchase is defined %}
+                {% for data in purchase%}
+                    <tr>
+                        <td class="border-0 text-start">{{ data.symbol }}</td>
+                        <td class="border-0 text-start">{{ data.name }}</td>
+                        <td class="border-0 text-end">{{ data.shares }}</td>
+                        <td class="border-0 text-end">{{ data.price | usd }}</td>
+                        <td class="border-0 text-end">{{ data.total | usd}}</td>
+                    </tr>
+                {% endfor %}
+            {% endif %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="4">Cash</td>
+                <td class="border-0 text-end" colspan="4">{{ cash | usd }}</td>
+            </tr>
+            <tr>
+                <td class="border-0 fw-bold text-end" colspan="4">TOTAL</td>
+
+                {% if purchase is defined %}
+                    <td class="border-0 text-end" colspan="4">{{ total | usd }}</td>
+                {% else %}
+                    <td class="border-0 text-end" colspan="4">{{ cash | usd }}</td>
+                {% endif %}
+            </tr>
+        </tfoot>
+    </table>
+
+{% endblock %}

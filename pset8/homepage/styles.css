@@ -1,0 +1,116 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Sarala', cursive;
+    height: 100px;
+    margin: 0 3vw;
+    border-bottom: 0.4px solid black;
+}
+
+.titulo-header {
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.navegacao-header{
+    display: flex;
+    gap: 2vw;
+}
+
+.navegacao-header a {
+    color: #252525;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.navegacao-header a:hover {
+    color: white;
+    background-color: #252525;
+}
+
+/* Home page */
+/* Main */
+.conteudo-principal {
+    margin: 0 3vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0 70px 0;
+}
+
+.apresentacao {
+    width: 50%;
+    margin: auto 0;
+}
+
+.foto {
+    height: 200px;
+    border-radius: 100px;
+}
+
+/* Projects */
+.titulo-projetos {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-projetos h3 {
+    border-top: 0.4px solid black;
+    display: inline;
+    padding: 40px 0 30px 0;
+}
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.projetos a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Sarala';
+    text-align: center;
+}
+
+.projetos a:hover {
+    text-decoration: underline;
+}
+
+.projetos img {
+    height: 200px;
+    border-radius: 20px;
+    padding-bottom: 5px;
+}
+
+.projetos img:hover {
+    opacity: 0.7;
+}
+
+/* Technical Knowledge, Hobbies and Favorite Pages */
+.container-technical, .container-hobbies, .container-favorite {
+    margin: 0 3vw;
+    padding: 30px 0 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.container-hobbies ul {
+    padding: 10px 0;
+}
+
+.favorite-cartoons tr {
+    border: 1px solid #252525;
+}
+
+.favorite-cartoons td, th {
+    padding: 10px;
+    border: 1px solid #252525;
+}
