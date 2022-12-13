@@ -1,7 +1,7 @@
 # CS50x Problem Sets
 These are the problem sets from each lecture in CS50's Introduction to Computer Science course from Harvard University, the 2022 version of the course.
 
-- Many problem sets codes have already been distributed to students.
+- Some problem sets codes have already been distributed to students, but with missing functions for us to implement.
 
 You can find the link to the course website <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x">here</a>.
 Partnered with edX.
